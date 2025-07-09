@@ -1,4 +1,4 @@
-package br.com.tlobras.springbootprogramaticallycircuirtbreaker
+package br.com.tlobras.springbootprogramaticallycircuirtbreaker.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

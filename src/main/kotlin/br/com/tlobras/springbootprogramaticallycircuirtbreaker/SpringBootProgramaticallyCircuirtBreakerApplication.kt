@@ -1,17 +1,16 @@
 package br.com.tlobras.springbootprogramaticallycircuirtbreaker
 
-import br.com.tlobras.springbootprogramaticallycircuirtbreaker.services.ExecuteGetService
+import br.com.tlobras.springbootprogramaticallycircuirtbreaker.services.ServiceExecutorOrchestratorService
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
 class SpringBootProgrammaticallyCircuitBreakerApplication(
-	private val executeGetService: ExecuteGetService
+	private val service: ServiceExecutorOrchestratorService
 ) : CommandLineRunner {
 	override fun run(vararg args: String?) {
-		val result = executeGetService.execute("http://example.com", "exampleService")
-		println("Service response: $result")
+		service.run()
 	}
 }
 
