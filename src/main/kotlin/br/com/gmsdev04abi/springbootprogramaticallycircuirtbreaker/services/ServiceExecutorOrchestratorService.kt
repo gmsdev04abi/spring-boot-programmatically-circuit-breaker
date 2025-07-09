@@ -1,4 +1,4 @@
-package br.com.tlobras.springbootprogramaticallycircuirtbreaker.services
+package br.com.gmsdev04abi.springbootprogramaticallycircuirtbreaker.services
 
 import org.springframework.stereotype.Service
 

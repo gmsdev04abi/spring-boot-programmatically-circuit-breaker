@@ -1,6 +1,6 @@
-package br.com.tlobras.springbootprogramaticallycircuirtbreaker
+package br.com.gmsdev04abi.springbootprogramaticallycircuirtbreaker
 
-import br.com.tlobras.springbootprogramaticallycircuirtbreaker.services.ServiceExecutorOrchestratorService
+import br.com.gmsdev04abi.springbootprogramaticallycircuirtbreaker.services.ServiceExecutorOrchestratorService
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

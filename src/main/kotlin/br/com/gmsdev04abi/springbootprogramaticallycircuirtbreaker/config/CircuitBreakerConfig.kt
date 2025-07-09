@@ -1,4 +1,4 @@
-package br.com.tlobras.springbootprogramaticallycircuirtbreaker.config
+package br.com.gmsdev04abi.springbootprogramaticallycircuirtbreaker.config
 
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig
 import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry
