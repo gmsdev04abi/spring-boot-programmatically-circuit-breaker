@@ -7,12 +7,19 @@ class ServiceExecutorOrchestratorService(
     private val executeGetService: ExecuteGetService
 ) {
     fun run() {
-        executeGetService.execute("http://localhost:8080/api/success", "exampleService").let {
-            println("Service response: $it")
-        }
+        val urls = listOf(
+            "http://localhost:8080/api/success" to "successService",
+            "http://localhost:8080/api/error" to "errorService"
+        )
 
-        executeGetService.execute("http://localhost:8080/api/error", "exampleService").let {
-            println("Service response: $it")
+        repeat(10) {
+            urls.forEach { (url, serviceName) ->
+                executeGetService.execute(url, serviceName).let {
+                    println("Service response: $it")
+                }.also {
+                    Thread.sleep(1000)
+                }
+            }
         }
     }
 }
